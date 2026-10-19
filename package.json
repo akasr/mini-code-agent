@@ -1,0 +1,34 @@
+{
+    "name": "mini-code-agent",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "tsx src/cli.ts",
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devEngines": {
+        "packageManager": {
+            "name": "pnpm",
+            "version": "12.14.0",
+            "onFail": "download"
+        }
+    },
+    "packageManager": "pnpm@12.14.0",
+    "type": "module",
+    "dependencies": {
+        "dotenv": "^18.0.8",
+        "openai": "^7.38.0",
+        "zod": "^4.6.7"
+    },
+    "devDependencies": {
+        "@types/node": "^26.6.5",
+        "tsx": "^4.23.15",
+        "typescript": "^7.0.2",
+        "vitest": "^5.0.5"
+    }
+}
